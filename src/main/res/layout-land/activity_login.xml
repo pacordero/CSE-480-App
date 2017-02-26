@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@color/white"
+    tools:context="com.example.patrickcordero.trailmix.LoginActivity">
+
+    <!-- Temp Logo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView"
+        android:text="@string/trailmix"
+        android:textSize="48sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/register_hotlink"
+        android:layout_alignEnd="@+id/register_hotlink" />
+
+    <!-- Password EditBox-->
+
+    <!--Email EditBox-->
+
+    <!-- Login Button-->
+
+    <!-- Hotlink to register screen OR Hotlink to website registration-->
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_marginTop="24dp"
+        android:text="@string/login"
+        style="@style/buttonLayout"
+        android:layout_below="@+id/input_password"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/new_user_register_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/register_hotlink"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        style="@style/landTextBoxStyle"
+        android:layout_below="@+id/input_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/input_email"
+
+
+        android:inputType="textPersonName"
+        android:hint="@string/email"
+        style="@style/landTextBoxStyle"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+</RelativeLayout>

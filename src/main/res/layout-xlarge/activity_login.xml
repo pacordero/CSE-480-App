@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="70dp"
+    android:paddingRight="70dp"
+    android:background="@color/white"
+    tools:context="com.example.patrickcordero.trailmix.LoginActivity">
+
+    <!-- Temp Logo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:text="@string/trailmix"
+        android:textSize="75sp"
+        android:textColor="@android:color/black"
+         />
+    <!-- Password EditBox-->
+    <EditText
+        android:id="@+id/input_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/input_email"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/password"
+        style="@style/largeTextBoxStyle"/>
+    <!--Email EditBox-->
+    <EditText
+        android:id="@+id/input_email"
+        android:background="@drawable/border_bottom"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="textPersonName"
+        android:layout_marginTop="82dp"
+        android:hint="@string/email"
+        style="@style/largeTextBoxStyle"
+         />
+    <!-- Login Button-->
+
+    <!-- Hotlink to register screen OR Hotlink to website registration-->
+    <TextView
+        android:text="@string/new_user_register_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:id="@+id/register_hotlink"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp" />
+
+    <Button
+        android:layout_width="350px"
+        android:layout_height="140px"
+        android:id="@+id/login_button"
+        android:text="@string/login"
+        android:textSize="30sp"
+        android:background="@color/button_color"
+        android:layout_below="@+id/input_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+
+</RelativeLayout>
